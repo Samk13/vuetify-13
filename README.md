@@ -1,4 +1,4 @@
-# todo-vuetify
+# todo-app using : vuetify + typeScript +
 
 ## Project setup
 ```
