@@ -7,18 +7,18 @@
       </v-toolbar-title>
       <v-spacer />
       <v-btn flat color="grey">
-          <span>Sign Out</span>
-          <v-icon right>{{ signOut }}</v-icon>
+        <span>Sign Out</span>
+        <v-icon right>{{ signOut }}</v-icon>
       </v-btn>
     </v-toolbar>
   </nav>
 </template>
 
 <script>
-import { mdiExitToApp } from '@mdi/js';
+import { mdiExitToApp } from "@mdi/js";
 export default {
   data: () => ({
-    signOut: mdiExitToApp,
+    signOut: mdiExitToApp
   })
 };
 </script>
