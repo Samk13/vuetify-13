@@ -26,15 +26,14 @@
             </div>
           </v-col>
           <v-col xs="2" sm="4" md="2">
-            <div class="caption secondary--text">
-              Status
-            </div>
-            <div>
-              {{ project.status }}
+            <div class="right">
+              <v-chip small>
+                {{ project.status }}
+              </v-chip>
             </div>
           </v-col>
         </v-layout>
-      <v-divider />
+        <v-divider />
       </v-card>
     </v-container>
   </div>
@@ -46,25 +45,58 @@
 export default {
   name: "Dashboard",
   data: () => ({
-          projects: [
-        { id:'123189031283jkhgm', title: 'Design a new website', person: 'The Net Ninja', due: '1st Jan 2020', status: 'ongoing', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!'},
-        { id:'p23asojdkajsf', title: 'Code up the homepage', person: 'Chun Li', due: '10th Jan 2021', status: 'complete', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!'},
-        { id:'pdk67fdf65f', title: 'Design video thumbnails', person: 'Ryu', due: '20th Dec 2022', status: 'complete', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!'},
-        { id:'p23asojdkaklsdfgjsf', title: 'Create a community forum', person: 'Gouken', due: '20th Oct 2023', status: 'overdue', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!'},
-      ]
+    projects: [
+      {
+        id: "123189031283jkhgm",
+        title: "Design a new website",
+        person: "The Net Ninja",
+        due: "1st Jan 2020",
+        status: "ongoing",
+        content:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!"
+      },
+      {
+        id: "p23asojdkajsf",
+        title: "Code up the homepage",
+        person: "Chun Li",
+        due: "10th Jan 2021",
+        status: "complete",
+        content:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!"
+      },
+      {
+        id: "pdk67fdf65f",
+        title: "Design video thumbnails",
+        person: "Ryu",
+        due: "20th Dec 2022",
+        status: "complete",
+        content:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!"
+      },
+      {
+        id: "p23asojdkaklsdfgjsf",
+        title: "Create a community forum",
+        person: "Gouken",
+        due: "20th Oct 2023",
+        status: "overdue",
+        content:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!"
+      }
+    ]
   })
 };
 </script>
+
 <style scoped>
-.project.complete{
-  border-left: 4px solid #3CD1C2;
+.project.complete {
+  border-left: 4px solid #3cd1c2;
   background-color: #ecffff;
 }
-.project.ongoing{
+.project.ongoing {
   border-left: 4px solid orange;
   background-color: rgb(255, 248, 235);
 }
-.project.overdue{
+.project.overdue {
   border-left: 4px solid tomato;
   background-color: rgb(255, 236, 233);
 }
