@@ -1,6 +1,7 @@
 # todo-app using : vuetify + typeScript
 
 ## Project setup
+
 ```
 npm install
 ```
