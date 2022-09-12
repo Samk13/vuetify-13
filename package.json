@@ -21,7 +21,7 @@
     "@vue/cli-plugin-typescript": "~5.0.7",
     "@vue/cli-plugin-router": "~5.0.7",
     "@vue/cli-plugin-babel": "~5.0.6",
-    "@vue/cli-service": "~4.5.15",
+    "@vue/cli-service": "~5.0.8",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.1.0",
     "eslint": "^6.7.2",
